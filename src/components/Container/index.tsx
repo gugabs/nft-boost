@@ -1,7 +1,7 @@
 import { twMerge } from "tailwind-merge";
 
 type ContainerProps = {
-  className: string;
+  className?: string;
 };
 
 type Container = React.PropsWithChildren<ContainerProps>;
@@ -16,3 +16,5 @@ const Container: React.FC<Container> = ({ children, className }) => {
     </div>
   );
 }
+
+export default Container;

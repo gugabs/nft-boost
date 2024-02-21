@@ -18,17 +18,35 @@ const config = {
       },
     },
     extend: {
+      backgroundColor: {
+        "nft-card": "#05030A",
+        "nft-card-btn": "#1D4FFE",
+        "nft-card-likes": "#05030A"
+      },
+      borderColor: {
+        "nft-card": "#131317"
+      },
+      borderRadius: {
+        "nft-card-btn": "122px",
+        "nft-card-likes": "122px"
+      },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       colors: {
-        "primary-blue": "#1D4FFE",
-        "primary-green": "#4BCE97"
+        "nft-card-badge": "#6691FF",
+        "nft-card-collection": "#DFDFE0"
       },
       fontFamily: {
         inter: ["var(--font-inter)"],
         poppins: ["var(--font-poppins)"]
+      },
+      fontSize: {
+        "2xs": "10px"
+      },
+      height: {
+        "nft-card-cover": "15.0131rem"
       },
       keyframes: {
         "accordion-down": {
@@ -41,7 +59,8 @@ const config = {
         },
       },
       maxWidth: {
-        grid: "77.5rem"
+        grid: "77.5rem",
+        "nft-card": "17.5rem"
       },
     },
   },
