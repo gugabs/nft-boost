@@ -68,6 +68,9 @@ const config = {
         "collector-card": "4.625rem"
       }
     },
+    screens: {
+      '@laptop': '1024px',
+    },
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config

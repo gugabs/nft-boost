@@ -12,9 +12,9 @@ type CollectorCardProps = {
 
 const CollectorCard: React.FC<CollectorCardProps> = ({ ranking, collectorUsername, minPrice, currPrice }) => {
   return (
-    <div className="w-full h-auto h-min-collector-card px-8 py-2 border border-white/[.05] rounded-collector-card flex justify-between font-inter text-white bg-white/[.01]">
-      <div className="flex gap-2 font-semibold">
-        <div className="flex justify-center items-center">{ranking}</div>
+    <div className="w-full h-auto h-min-collector-card px-7 py-2 border border-white/[.05] rounded-collector-card flex justify-between font-inter text-xs text-white bg-white/[.01] @laptop:text-sm">
+      <div className="flex gap-6 font-semibold">
+        <div className="flex justify-center items-center text-sm @laptop:text-base">{ranking}</div>
         <div className="flex gap-4 items-center">
           <div className="min-w-10 min-h-10 relative">
             <Image
@@ -29,14 +29,14 @@ const CollectorCard: React.FC<CollectorCardProps> = ({ ranking, collectorUsernam
                 right: -3,
                 bottom: -3
               }}
-              width={20}
+              width={16}
               src={VerifiedIcon}
               alt=""
             />
           </div>
           <div>
-            <p>{collectorUsername}</p>
-            <div className="flex flex-wrap ">
+            <p className="text-sm @laptop:text-base">{collectorUsername}</p>
+            <div className="flex items-center flex-wrap ">
               <p className="mr-2 font-normal opacity-70">Preço mínimo</p>
               <p className="flex items-center">
                 <Image
