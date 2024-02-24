@@ -5,7 +5,7 @@ import VerifiedIcon from "@/assets/icons/verified.svg"
 
 import { FaRegClock, FaRegHeart } from "react-icons/fa6";
 
-type NFTCard = {
+type NFTCardProps = {
   likesCount: number;
   collection: string;
   tag: string;
@@ -13,7 +13,7 @@ type NFTCard = {
   expiresAt: number;
 };
 
-const NFTCard: React.FC<NFTCard> = ({ likesCount, collection, tag, price, expiresAt }) => {
+const NFTCard: React.FC<NFTCardProps> = ({ likesCount, collection, tag, price, expiresAt }) => {
   function getLocalPrice(price: number): string {
     return "R$450,00"
   }
@@ -64,7 +64,7 @@ const NFTCard: React.FC<NFTCard> = ({ likesCount, collection, tag, price, expire
                     alt="Ethereum Currency Icon"
                   />
                 </span>
-                {price}
+                {price} ETH
               </h2>
               <p className="font-medium text-xs">{getLocalPrice(price)}</p>
             </div>

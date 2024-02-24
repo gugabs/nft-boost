@@ -27,14 +27,16 @@ const config = {
         "nft-card": "#131317"
       },
       borderRadius: {
-        "nft-card-btn": "122px",
-        "nft-card-likes": "122px"
+        "collector-card": "6.25rem",
+        "nft-card-btn": "7.625rem",
+        "nft-card-likes": "7.625rem"
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       colors: {
+        "collector-card-appreciation": "#4BCE97",
         "nft-card-badge": "#6691FF",
         "nft-card-collection": "#DFDFE0"
       },
@@ -62,6 +64,9 @@ const config = {
         grid: "77.5rem",
         "nft-card": "17.5rem"
       },
+      minHeight: {
+        "collector-card": "4.625rem"
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],
