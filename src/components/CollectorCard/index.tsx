@@ -12,7 +12,7 @@ type CollectorCardProps = {
 
 const CollectorCard: React.FC<CollectorCardProps> = ({ ranking, collectorUsername, minPrice, currPrice }) => {
   return (
-    <div className="w-full h-auto h-min-collector-card px-7 py-2 border border-white/[.05] rounded-collector-card flex justify-between font-inter text-xs text-white bg-white/[.01] @laptop:text-sm">
+    <div className="w-full h-auto h-min-collector-card px-7 py-2 border border-white/[.05] rounded-full flex justify-between font-inter text-xs text-white bg-white/[.01] @laptop:text-sm">
       <div className="flex gap-6 font-semibold">
         <div className="flex justify-center items-center text-sm @laptop:text-base">{ranking}</div>
         <div className="flex gap-4 items-center">

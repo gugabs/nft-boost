@@ -19,17 +19,12 @@ const config = {
     },
     extend: {
       backgroundColor: {
+        "btn-primary": "#1D4FFE",
         "nft-card": "#05030A",
-        "nft-card-btn": "#1D4FFE",
         "nft-card-likes": "#05030A"
       },
       borderColor: {
         "nft-card": "#131317"
-      },
-      borderRadius: {
-        "collector-card": "6.25rem",
-        "nft-card-btn": "7.625rem",
-        "nft-card-likes": "7.625rem"
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",

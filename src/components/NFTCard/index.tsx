@@ -31,7 +31,7 @@ const NFTCard: React.FC<NFTCardProps> = ({ likesCount, collection, tag, price, e
           quality={100}
           alt=""
         />
-        <div className="w-20 h-11 border-2 border-nft-card rounded-nft-card-likes absolute top-2 right-2 flex items-center justify-center gap-1 font-semibold bg-nft-card-likes">
+        <div className="w-20 h-11 border-2 border-nft-card rounded-full absolute top-2 right-2 flex items-center justify-center gap-1 font-semibold bg-nft-card-likes">
           <span>
             <FaRegHeart />
           </span>
@@ -70,7 +70,7 @@ const NFTCard: React.FC<NFTCardProps> = ({ likesCount, collection, tag, price, e
             </div>
           </div>
         </div>
-        <button className="w-full py-4 rounded-nft-card-btn font-semibold text-sm bg-nft-card-btn">
+        <button className="w-full py-4 rounded-full font-semibold text-sm bg-btn-primary">
           Buy Now
         </button>
         <p className="h-2 flex items-center gap-1 text-2xs/3">
