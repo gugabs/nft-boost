@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        "divider": "linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(255,255,255,1) 50%, rgba(0,212,255,0) 100%)"
+      },
       backgroundColor: {
         "btn-primary": "#1D4FFE",
         "nft-card": "#05030A",
