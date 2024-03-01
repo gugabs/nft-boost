@@ -15,7 +15,7 @@ export default function Home() {
         <Container>
           <SectionHeader title="Coleções Notáveis" subtitle="Destaques em Coleções" />
         </Container>
-        <div className="px-4 flex justify-center gap-8 overflow-scroll">
+        <div className="px-4 flex gap-8 overflow-scroll @laptop:justify-center">
           <NFTCard srcImage="/images/nfts/nft-card-cover-1.png" likesCount={105} collection="Cartoon Collection" tag="Cat #221" price={0.0721} expiresAt={5} />
           <NFTCard srcImage="/images/nfts/nft-card-cover-2.png" likesCount={105} collection="Cartoon Collection" tag="Snike #2331" price={0.0574} expiresAt={5} />
           <NFTCard srcImage="/images/nfts/nft-card-cover-3.png" likesCount={105} collection="Cartoon Collection" tag="Skull Hatter #2311" price={0.0813} expiresAt={5} />
