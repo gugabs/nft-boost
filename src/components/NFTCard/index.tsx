@@ -16,7 +16,11 @@ type NFTCardProps = {
 
 const NFTCard: React.FC<NFTCardProps> = ({ srcImage, likesCount, collection, tag, price, expiresAt }) => {
   function getLocalPrice(price: number): string {
-    return "R$450,00"
+    const ETHToReal = 16982.87;
+
+    const localPrice = `${(price * ETHToReal).toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}`
+
+    return localPrice;
   }
 
   function getRemainingTime(expiresAt: number): string {
