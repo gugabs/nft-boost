@@ -6,6 +6,7 @@ import VerifiedIcon from "@/assets/icons/verified.svg"
 import { FaRegClock, FaRegHeart } from "react-icons/fa6";
 
 type NFTCardProps = {
+  srcImage: string;
   likesCount: number;
   collection: string;
   tag: string;
@@ -13,7 +14,7 @@ type NFTCardProps = {
   expiresAt: number;
 };
 
-const NFTCard: React.FC<NFTCardProps> = ({ likesCount, collection, tag, price, expiresAt }) => {
+const NFTCard: React.FC<NFTCardProps> = ({ srcImage, likesCount, collection, tag, price, expiresAt }) => {
   function getLocalPrice(price: number): string {
     return "R$450,00"
   }
@@ -23,11 +24,11 @@ const NFTCard: React.FC<NFTCardProps> = ({ likesCount, collection, tag, price, e
   }
 
   return (
-    <div className="w-full max-w-nft-card border border-nft-card rounded-2xl font-inter bg-nft-card overflow-hidden">
+    <div className="w-full max-w-nft-card border border-nft-card rounded-2xl flex flex-col shrink-0 font-inter bg-nft-card overflow-hidden">
       <div className="w-full h-nft-card-cover relative">
         <Image
           fill
-          src="/images/nfts/nft-card-cover-1.png"
+          src={srcImage}
           quality={100}
           alt=""
         />
@@ -71,7 +72,7 @@ const NFTCard: React.FC<NFTCardProps> = ({ likesCount, collection, tag, price, e
           </div>
         </div>
         <button className="w-full py-4 rounded-full font-semibold text-sm bg-btn-primary">
-          Buy Now
+          Comprar Agora
         </button>
         <p className="h-2 flex items-center gap-1 text-2xs/3">
           <span className="flex items-center text-sm">

@@ -1,5 +1,11 @@
+import Container from "../Container";
+
 const Divider: React.FC = () => {
-  return <div className="w-full h-[1px] bg-divider opacity-25"></div>;
+  return (
+    <Container>
+      <div className="w-full h-[1px] bg-divider opacity-15"></div>
+    </Container>
+  );
 }
 
 export default Divider;

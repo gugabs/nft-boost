@@ -15,8 +15,8 @@ import Divider from "@/components/Divider";
 
 const SectionHero: React.FC = () => {
   return (
-    <section className="flex flex-col gap-12 overflow-hidden">
-      <Container className="pt-24 flex flex-col items-center gap-9">
+    <section className="py-28 flex flex-col gap-12 overflow-hidden">
+      <Container className="flex flex-col items-center gap-9">
         <div className="flex flex-col items-center gap-4 font-inter text-xl text-center">
           <p className="text-sm @laptop:text-xl">
             <span className="mr-2">
@@ -107,10 +107,6 @@ const SectionHero: React.FC = () => {
           alt=""
         />
       </div>
-
-      <Container>
-        <Divider />
-      </Container>
     </section>
   );
 }
