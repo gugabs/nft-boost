@@ -27,7 +27,7 @@ const SectionHero: React.FC = () => {
             </span>
             Adentre um reino de possibilidades infinitas
           </p>
-          <h1 className="font-poppins text-[40px]/[48px] font-semibold @laptop:text-7xl/[86.4px]">
+          <h1 className="max-w-[1225px] font-poppins text-[40px]/[48px] font-semibold @laptop:text-7xl/[86.4px]">
             Explore
 
             <span className="mx-2 @laptop:mx-1">
@@ -70,7 +70,7 @@ const SectionHero: React.FC = () => {
 
             Colecionáveis Únicos!
           </h1>
-          <p className="text-sm opacity-85 @laptop:max-w-[648px] @laptop:text-xl">Adentre um reino de possibilidades infinitas e mergulhe nas coleções de NFT, onde a arte, a cultura e a inovação se unem para criar experiências verdadeiramente exclusivas.</p>
+          <p className="text-sm opacity-85 @laptop:max-w-[648px] @laptop:text-xl">Adentre um reino de possibilidades infinitas e mergulhe nas coleções de NFTs, onde a arte, a cultura e a inovação se unem para criar experiências verdadeiramente exclusivas.</p>
         </div>
         <div className="flex flex-col items-center gap-4 @laptop:flex-row">
           <button>

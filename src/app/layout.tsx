@@ -26,13 +26,9 @@ export const metadata: Metadata = {
   description: "Projeto do módulo de Next do curso Codeboost",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="pt-br">
+    <html className={`${poppins.variable} ${inter.variable}`} lang="pt-br">
       <body>
         <Header />
         {children}

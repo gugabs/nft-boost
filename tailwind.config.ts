@@ -40,14 +40,14 @@ const config = {
         "nft-card-collection": "#DFDFE0"
       },
       fontFamily: {
-        inter: ["var(--font-inter)"],
-        poppins: ["var(--font-poppins)"]
+        inter: "var(--font-inter)",
+        poppins: "var(--font-poppins)"
       },
       fontSize: {
-        "2xs": "10px"
+        "2xs": "0.625rem"
       },
       height: {
-        "last-call": "472px",
+        "last-call": "29.5rem",
         "nft-card-cover": "15.0131rem"
       },
       keyframes: {
@@ -62,16 +62,12 @@ const config = {
       },
       maxWidth: {
         "grid": "77.5rem",
-        "last-call-title": "796px",
-        "last-call-subtitle": "638px",
+        "last-call-title": "49.75rem",
+        "last-call-subtitle": "39.875rem",
         "nft-card": "17.5rem"
       },
       minHeight: {
         "collector-card": "4.625rem"
-      },
-      width: {
-        "last-call-title": "796px",
-        "last-call-subtitle": "638px"
       }
     },
     screens: {

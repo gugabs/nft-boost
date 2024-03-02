@@ -2,6 +2,8 @@ import Image from "next/image";
 
 import { FaBars } from "react-icons/fa6";
 
+import Brand from "@/assets/brand.svg";
+
 import Container from "../Container";
 
 const Header: React.FC = () => {
@@ -9,9 +11,7 @@ const Header: React.FC = () => {
     <Container>
       <header className="h-20 flex justify-between items-center font-inter font-medium">
         <Image
-          width={160}
-          height={35}
-          src="/images/brand.svg"
+          src={Brand}
           alt=""
         />
         <div className="hidden @laptop:block">
