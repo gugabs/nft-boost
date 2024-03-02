@@ -1,25 +1,24 @@
 import CollectorCard from "@/components/CollectorCard";
 import Container from "@/components/Container";
-import NFTCard from "@/components/NFTCard";
 import SectionHeader from "@/components/SectionHeader";
 
 const SectionAppreciation: React.FC = () => {
   return (
     <Container>
-      <section className="py-28">
-        <SectionHeader title="Principais Coleções" subtitle="Coleções em Foco" />
+      <section className="py-20">
+        <SectionHeader title="Bons Negócios" subtitle="Mercado Atual" />
 
         <div className="flex flex-col gap-4 @laptop:flex-row @laptop:gap-8">
           <div className="w-full flex flex-col gap-4">
-            <CollectorCard ranking={1} collectorUsername="gugabs" minPrice={54} currPrice={68} />
-            <CollectorCard ranking={1} collectorUsername="gugabs" minPrice={54} currPrice={68} />
-            <CollectorCard ranking={1} collectorUsername="gugabs" minPrice={54} currPrice={68} />
+            <CollectorCard srcImage={"/images/nfts/5.png"} ranking={1} collectorUsername="Crazy M. #131" minPrice={0.0450} currPrice={0.0854} appreciation={24} />
+            <CollectorCard srcImage={"/images/nfts/6.png"} ranking={2} collectorUsername="Alien S. #2211" minPrice={0.0450} currPrice={0.0721} appreciation={20} />
+            <CollectorCard srcImage={"/images/nfts/2.png"} ranking={3} collectorUsername="Snike #2331" minPrice={0.0450} currPrice={0.0814} appreciation={32} />
           </div>
 
           <div className="w-full flex flex-col gap-4">
-            <CollectorCard ranking={1} collectorUsername="gugabs" minPrice={54} currPrice={68} />
-            <CollectorCard ranking={1} collectorUsername="gugabs" minPrice={54} currPrice={68} />
-            <CollectorCard ranking={1} collectorUsername="gugabs" minPrice={54} currPrice={68} />
+            <CollectorCard srcImage={"/images/nfts/10.png"} ranking={4} collectorUsername="Durtre #2391" minPrice={0.0450} currPrice={0.0487} appreciation={27} />
+            <CollectorCard srcImage={"/images/nfts/11.png"} ranking={5} collectorUsername="Hatter #321" minPrice={0.0450} currPrice={0.0684} appreciation={12} />
+            <CollectorCard srcImage={"/images/nfts/12.png"} ranking={6} collectorUsername="Sailor S. #4431" minPrice={0.0450} currPrice={0.0527} appreciation={3} />
           </div>
         </div>
       </section>

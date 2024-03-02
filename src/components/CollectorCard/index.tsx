@@ -4,23 +4,25 @@ import EthereumIcon from "@/assets/icons/eth.svg"
 import VerifiedIcon from "@/assets/icons/verified.svg"
 
 type CollectorCardProps = {
+  srcImage: string;
   ranking: number;
   collectorUsername: string;
   minPrice: number;
   currPrice: number;
+  appreciation: number;
 };
 
-const CollectorCard: React.FC<CollectorCardProps> = ({ ranking, collectorUsername, minPrice, currPrice }) => {
+const CollectorCard: React.FC<CollectorCardProps> = ({ srcImage, ranking, collectorUsername, minPrice, currPrice, appreciation }) => {
   return (
     <div className="w-full h-auto h-min-collector-card px-7 py-2 border border-white/[.05] rounded-full flex justify-between font-inter text-xs text-white bg-white/[.01] @laptop:text-sm">
-      <div className="mx-2 flex gap-6 font-semibold">
+      <div className="flex gap-6 font-semibold">
         <div className="flex justify-center items-center text-sm @laptop:text-base">{ranking}</div>
         <div className="flex gap-4 items-center">
           <div className="min-w-10 min-h-10 relative">
             <Image
               className="rounded-full"
               fill
-              src="/images/nfts/nft-card-cover-1.png"
+              src={srcImage}
               alt=""
             />
             <Image
@@ -53,7 +55,7 @@ const CollectorCard: React.FC<CollectorCardProps> = ({ ranking, collectorUsernam
         </div>
       </div>
       <div className="flex shrink-0 flex-col justify-center items-end">
-        <p className="font-bold text-collector-card-appreciation">20%</p>
+        <p className="font-bold text-collector-card-appreciation">{appreciation}%</p>
         <p className="flex items-center gap-2 font-semibold">
           <Image
             src={EthereumIcon}

@@ -11,11 +11,10 @@ import GoolePlay from "@/assets/badges/google-play.png"
 
 import LeftNFTGroup from "@/assets/images/s-hero-left-nfts.png"
 import RightNFTGroup from "@/assets/images/s-hero-right-nfts.png"
-import Divider from "@/components/Divider";
 
 const SectionHero: React.FC = () => {
   return (
-    <section className="py-28 flex flex-col gap-12 overflow-hidden">
+    <section className="py-20 flex flex-col gap-12 overflow-hidden">
       <Container className="flex flex-col items-center gap-9">
         <div className="flex flex-col items-center gap-4 font-inter text-xl text-center">
           <p className="text-sm @laptop:text-xl">
