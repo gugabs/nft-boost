@@ -27,8 +27,9 @@ const NFTCard: React.FC<NFTCardProps> = ({ srcImage, likesCount, collection, tag
 
   return (
     <div className="w-full max-w-nft-card border border-nft-card rounded-2xl flex flex-col shrink-0 font-inter bg-nft-card overflow-hidden">
-      <div className="w-full h-nft-card-cover relative">
+      <div className="w-full h-nft-card-cover relative overflow-hidden">
         <Image
+          className="transition-transform hover:scale-[1.15]"
           fill
           src={srcImage}
           quality={100}
@@ -73,10 +74,10 @@ const NFTCard: React.FC<NFTCardProps> = ({ srcImage, likesCount, collection, tag
             </div>
           </div>
         </div>
-        <button className="w-full py-4 rounded-full font-semibold text-sm bg-btn-primary">
+        <button className="w-full py-4 rounded-full font-semibold text-sm bg-btn-primary default-hover">
           Comprar Agora
         </button>
-        <p className="h-2 flex items-center gap-1 text-2xs/3">
+        <p className="h-2 flex items-center gap-2 text-2xs/3">
           <span className="flex items-center text-sm">
             <FaRegClock />
           </span>

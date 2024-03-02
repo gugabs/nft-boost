@@ -16,13 +16,13 @@ const Header: React.FC = () => {
         />
         <div className="hidden @laptop:block">
           <ul className="flex gap-12">
-            <li>Download</li>
-            <li>NFTs</li>
-            <li>Rank</li>
-            <li>FAQ</li>
+            <li className="default-hover">Download</li>
+            <li className="default-hover">NFTs</li>
+            <li className="default-hover">Rank</li>
+            <li className="default-hover">FAQ</li>
           </ul>
         </div>
-        <button className="hidden px-7 py-3 rounded-full bg-btn-primary @laptop:block">Conectar Carteira</button>
+        <button className="hidden px-7 py-3 rounded-full bg-btn-primary @laptop:block default-hover">Conectar Carteira</button>
         <div className="block p-3 border border-white/[.06] rounded text-2xl bg-white/[.03] @laptop:hidden">
           <FaBars />
         </div>

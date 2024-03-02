@@ -48,7 +48,7 @@ const SectionFAQ: React.FC = () => {
           return (
             <Accordion key={i} type="single" collapsible>
               <AccordionItem className="py-4 border-white border-opacity-10" value={`item-${i}`}>
-                <AccordionTrigger className="text-left @laptop:text-xl hover:no-underline">{faqItem.question}</AccordionTrigger>
+                <AccordionTrigger className="text-left @laptop:text-xl hover:no-underline default-hover">{faqItem.question}</AccordionTrigger>
                 <AccordionContent className="text-justify @laptop:text-base">{faqItem.answer}</AccordionContent>
               </AccordionItem>
             </Accordion>
