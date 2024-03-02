@@ -25,7 +25,7 @@ const SectionHighlights: React.FC<SectionHighlightsProps> = ({ title, subtitle, 
       </Container>
       <div className="px-4 flex gap-8 overflow-scroll @laptop:justify-center @laptop:overflow-auto">
         {
-          highlights.map(nft => <NFTCard {...nft} />)
+          highlights.map((nft, i) => <NFTCard key={i} {...nft} />)
         }
       </div>
     </section>
