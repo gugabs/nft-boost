@@ -1,6 +1,7 @@
 import Divider from "@/components/Divider";
 import LastCall from "@/components/LastCall";
 import SectionAppreciation from "@/sections/SectionAppreciation";
+import SectionFAQ from "@/sections/SectionFAQ";
 import SectionHero from "@/sections/SectionHero";
 import SectionHighlights from "@/sections/SectionHighlights";
 
@@ -164,7 +165,7 @@ export default function Home() {
       />
 
       <LastCall />
-
+      <SectionFAQ />
     </>
   );
 }
