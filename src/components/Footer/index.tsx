@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import Brand from "@/assets/brand.svg"
+import Brand from "@/assets/images/brand.svg"
 
 import Container from "@/components/Container";
 

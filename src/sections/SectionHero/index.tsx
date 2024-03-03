@@ -14,8 +14,8 @@ import Collectibles from "@/assets/icons/collectibles.svg"
 import BgToggle from "@/assets/icons/bg-toggle.svg"
 import Toggle from "@/assets/icons/toggle.svg"
 
-import AppStore from "@/assets/badges/app-store.png"
-import GoolePlay from "@/assets/badges/google-play.png"
+import AppStore from "@/assets/images/app-store.svg"
+import GoolePlay from "@/assets/images/google-play.svg"
 
 import LeftNFTGroup from "@/assets/images/s-hero-left-nfts.png"
 import RightNFTGroup from "@/assets/images/s-hero-right-nfts.png"
@@ -139,22 +139,7 @@ const SectionHero: React.FC = () => {
               />
             </span>
 
-            Digital
-
-            <span className="mx-2 relative @laptop:mx-1">
-              <Image
-                className="inline w-[102px] @laptop:hidden"
-                src={BgToggle}
-                alt=""
-              />
-              <Image
-                className="inline w-[42px] absolute left-[3px] bottom-[4px] @laptop:hidden"
-                src={Toggle}
-                alt=""
-              />
-            </span>
-
-            de
+            Digital de
 
             <span className="mx-1 @laptop:mx-2">
               <Image

@@ -7,8 +7,8 @@ import Image from "next/image";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef } from "react";
 
-import AppStore from "@/assets/badges/app-store.png"
-import GoolePlay from "@/assets/badges/google-play.png"
+import AppStore from "@/assets/images/app-store.svg"
+import GoolePlay from "@/assets/images/google-play.svg"
 
 import Container from "@/components/Container";
 
