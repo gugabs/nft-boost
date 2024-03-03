@@ -1,3 +1,10 @@
+"use client"
+
+import gsap from "gsap";
+
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect, useRef } from "react";
+
 import Container from "@/components/Container";
 import NFTCard from "@/components/NFTCard";
 import SectionHeader from "@/components/SectionHeader";
@@ -17,13 +24,35 @@ type SectionHighlightsProps = {
   highlights: NFTCardProps[];
 }
 
+gsap.registerPlugin(ScrollTrigger);
+
 const SectionHighlights: React.FC<SectionHighlightsProps> = ({ title, subtitle, highlights }) => {
+  const highlightsRef = useRef(null);
+
+  useEffect(() => {
+    const highlights = highlightsRef.current;
+
+    gsap.fromTo(highlights,
+      {
+        y: 50,
+        opacity: 0
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: .85,
+        scrollTrigger: {
+          trigger: highlights
+        }
+      })
+  }, [])
+
   return (
     <section className="py-20">
       <Container>
         <SectionHeader title={title} subtitle={subtitle} />
       </Container>
-      <div className="px-4 py-2 flex gap-8 overflow-scroll @laptop:justify-center @laptop:overflow-auto">
+      <div ref={highlightsRef} className="px-4 py-2 flex gap-8 overflow-scroll @laptop:justify-center @laptop:overflow-auto">
         {
           highlights.map((nft, i) => <NFTCard key={i} {...nft} />)
         }

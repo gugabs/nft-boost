@@ -40,9 +40,9 @@ const SectionHero: React.FC = () => {
     const leftCards = leftCardsRef.current;
     const rightCards = rightCardsRef.current;
 
-    const headlineTl = gsap.timeline();
+    const headlineTimeline = gsap.timeline();
 
-    headlineTl.fromTo(headline,
+    headlineTimeline.fromTo(headline,
       {
         y: 25,
         opacity: 0
@@ -80,7 +80,7 @@ const SectionHero: React.FC = () => {
               duration: .85
             }, "start+=0.25");
 
-    const cardsTl = gsap.timeline({
+    const cardsTimeline = gsap.timeline({
       scrollTrigger: {
         trigger: cardsContainer,
         start: "-=50% center",
@@ -88,7 +88,7 @@ const SectionHero: React.FC = () => {
       }
     });
 
-    cardsTl.to(leftCards,
+    cardsTimeline.to(leftCards,
       {
         x: 0,
       }, 0).to(rightCards,

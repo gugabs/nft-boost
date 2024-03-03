@@ -1,11 +1,40 @@
+"use client"
+
+import gsap from "gsap";
+
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect, useRef } from "react";
+
 import CollectorCard from "@/components/CollectorCard";
 import Container from "@/components/Container";
 import SectionHeader from "@/components/SectionHeader";
 
 const SectionAppreciation: React.FC = () => {
+  const nftsRef = useRef(null);
+
+  useEffect(() => {
+    const nfts = nftsRef.current;
+
+    gsap.fromTo(nfts,
+      {
+        y: 50,
+        opacity: 0
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: .85,
+        scrollTrigger: {
+          trigger: nfts
+        }
+      })
+  }, [])
+
+  gsap.registerPlugin(ScrollTrigger);
+
   return (
     <Container>
-      <section className="py-20">
+      <section ref={nftsRef} className="py-20">
         <SectionHeader title="Bons Negócios" subtitle="Mercado Atual" />
 
         <div className="flex flex-col gap-4 @laptop:flex-row @laptop:gap-8">
