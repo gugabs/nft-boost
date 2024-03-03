@@ -10,7 +10,7 @@ import { useEffect, useRef } from "react";
 import AppStore from "@/assets/badges/app-store.png"
 import GoolePlay from "@/assets/badges/google-play.png"
 
-import Container from "../Container";
+import Container from "@/components/Container";
 
 gsap.registerPlugin(ScrollTrigger);
 

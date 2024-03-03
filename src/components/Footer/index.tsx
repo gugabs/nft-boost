@@ -1,7 +1,8 @@
 import Image from "next/image";
 
 import Brand from "@/assets/brand.svg"
-import Container from "../Container";
+
+import Container from "@/components/Container";
 
 const Footer: React.FC = () => {
   return (

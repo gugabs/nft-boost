@@ -4,7 +4,7 @@ import { FaBars } from "react-icons/fa6";
 
 import Brand from "@/assets/brand.svg";
 
-import Container from "../Container";
+import Container from "@/components/Container";
 
 const Header: React.FC = () => {
   return (

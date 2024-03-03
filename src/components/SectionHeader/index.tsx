@@ -5,11 +5,6 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef } from "react";
 
-type SectionHeaderProps = {
-  title: string;
-  subtitle: string;
-};
-
 gsap.registerPlugin(ScrollTrigger);
 
 const SectionHeader: React.FC<SectionHeaderProps> = ({ title, subtitle }) => {

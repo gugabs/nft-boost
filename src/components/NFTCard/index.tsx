@@ -1,18 +1,9 @@
 import Image from "next/image";
 
-import EthereumIcon from "@/assets/icons/eth.svg"
-import VerifiedIcon from "@/assets/icons/verified.svg"
-
 import { FaRegClock, FaRegHeart } from "react-icons/fa6";
 
-type NFTCardProps = {
-  srcImage: string;
-  likesCount: number;
-  collection: string;
-  tag: string;
-  price: number;
-  expiresAt: number;
-};
+import EthereumIcon from "@/assets/icons/eth.svg"
+import VerifiedIcon from "@/assets/icons/verified.svg"
 
 const NFTCard: React.FC<NFTCardProps> = ({ srcImage, likesCount, collection, tag, price, expiresAt }) => {
   function getLocalPrice(price: number): string {

@@ -23,7 +23,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "NFTBoost | Explore um Universo Digital de Colecionáveis Únicos!",
-  description: "Projeto do módulo de Next do curso Codeboost",
+  description: "Projeto do módulo de Next.js do curso Codeboost.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
